@@ -19,15 +19,15 @@ export default function Home() {
             <h1 className="text-5xl text-[#ECDBBA] font-bold">Nikita Gorshkov</h1>
             <div className="text-[#faf8f0] font-semibold text-xl">
               <br />
-              <p>Hi! I'm currently a high school junior who enjoys web development and loves using technology to help others.</p>
+              <p>{"Hi! I'm currently a high school junior who enjoys web development and loves using technology to help others."}</p>
               <br />
-              <p>On the side I like to do competitive programming.</p>
+              <p>{"On the side I like to do competitive programming."}</p>
               <br />
-              <p>This website doesn't have a strict purpose and will simply be a place for me to put my thoughts.</p>
+              <p>{"This website doesn't have a strict purpose and will simply be a place for me to put my thoughts."}</p>
               <br />
-              <p>In the meantime, check out my GitHub profile (@nikita-go)!</p>
+              <p>{"In the meantime, check out my GitHub profile (@nikita-go)!"}</p>
               <br />
-              <p>P.S. I'll add a light theme... eventually.</p>
+              <p>{"P.S. I'll add a light theme... eventually."}</p>
             </div>
           </div>
         </div>
