@@ -23,7 +23,7 @@ export default function Home() {
               <br />
               <p>On the side I like to do competitive programming.</p>
               <br />
-              <p>This website doesn't have a strict purpose and will simply be a place for me to put my thoughts.</p>
+              <p>This website doesn't have any strict purpose and will simply be a place for me to put my thoughts.</p>
               <br />
               <p>In the meantime, check out my GitHub profile (@nikita-go)!</p>
             </div>
