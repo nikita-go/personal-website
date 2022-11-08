@@ -26,8 +26,6 @@ export default function Home() {
               <p>This website doesn't have a strict purpose and will simply be a place for me to put my thoughts.</p>
               <br />
               <p>In the meantime, check out my GitHub profile (@nikita-go)!</p>
-              <br />
-              <p>P.S. I'll add a light theme... eventually.</p>
             </div>
           </div>
         </div>
