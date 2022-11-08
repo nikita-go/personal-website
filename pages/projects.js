@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import { Header } from "../pages/components/global/Header";
-import { Footer } from "../pages/components/global/Footer";
+import { Header } from "../components/global/Header";
+import { Footer } from "../components/global/Footer";
 
 export default function Projects() {
     return(
