@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "../components/global/Header";
 import { Footer } from "../components/global/Footer";
+import { TypewriterText } from "../components/home/TypewriterText";
+
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
         <div className="flex justify-center items-center flex-auto">
           <div className="max-w-[80%] text-left">
             <h1 className="text-5xl text-[#ECDBBA] font-bold">Nikita Gorshkov</h1>
-            <div className="text-[#faf8f0] font-semibold text-xl">
+            <div className="text-[#faf8f0] text-xl">
               <br />
               <p>Hi! I'm currently a high school junior who enjoys web development and loves using technology to help others.</p>
               <br />
