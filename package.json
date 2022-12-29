@@ -17,7 +17,10 @@
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.39.1"
+    "react-hook-form": "^7.39.1",
+    "react-simple-typewriter": "^5.0.1",
+    "react-typewriter-effect": "^1.1.0",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",

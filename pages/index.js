@@ -2,8 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "../components/global/Header";
 import { Footer } from "../components/global/Footer";
-import { TypewriterText } from "../components/home/TypewriterText";
-
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
@@ -19,15 +18,27 @@ export default function Home() {
         <div className="flex justify-center items-center flex-auto">
           <div className="max-w-[80%] text-left">
             <h1 className="text-5xl text-[#ECDBBA] font-bold">Nikita Gorshkov</h1>
-            <div className="text-[#faf8f0] text-xl">
-              <br />
+            <span className="text-[#a0dde4] text-3xl">
+              <Typewriter words={[
+                "competitive programmer",
+                "problem solver",
+                "IB student",
+                "web developer",
+              ]} 
+              cursor 
+              typeSpeed={70} 
+              deleteSpeed={60}
+              delaySpeed={1200} />
+            </span>
+            <br />
+            <div className="text-[#faf8f0] text-xl my-4">
               <p>Hi! I'm currently a high school junior who enjoys web development and loves using technology to help others.</p>
               <br />
               <p>On the side I like to do competitive programming.</p>
               <br />
-              <p>This website doesn't have any strict purpose and will simply be a place for me to put my thoughts.</p>
+              <p>I'll be adding more to this website very soon since I currently have some free time.</p>
               <br />
-              <p>In the meantime, check out my GitHub profile (@nikita-go)!</p>
+              <p>In the meantime, check out my GitHub profile (<a href="https://github.com/nikita-go" className="font-semibold text-transparent text-animation">@nikita-go</a>)!</p>
             </div>
           </div>
         </div>

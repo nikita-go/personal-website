@@ -22,3 +22,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.text-animation {
+  --bg-size: 400%;
+  background: linear-gradient(
+    90deg,
+    #7e7eff,
+    #ffbf6d,
+    #f02167,
+    #871080,
+    #7e7eff
+  ) 0 0 / var(--bg-size) 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 30s infinite linear;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
