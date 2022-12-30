@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex justify-center items-center flex-auto">
           <div className="max-w-[80%] text-left">
             <h1 className="text-5xl text-[#ECDBBA] font-bold">Nikita Gorshkov</h1>
-            <span className="text-[#a0dde4] text-3xl">
+            <span className="text-[#b3f7ff] text-3xl">
               <Typewriter words={[
                 "competitive programmer",
                 "problem solver",
