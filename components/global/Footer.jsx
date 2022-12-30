@@ -7,7 +7,7 @@ export const Footer = () => {
             <div className="mx-auto flex my-6 w-full max-w-[90%] justify-between">
                 <p className="text-white text-lg font-semibold">© Nikita Gorshkov 2022</p>
                 <ul className="list-none text-[#648ccd] text-lg space-x-12">
-                    <Link href="/contact" className="hover:text-[#7d9dd0]">Contact me</Link>
+                    <Link href="/contact" className="hover:text-[#7d9dd0] ease-in-out transition duration-250">Contact me</Link>
                 </ul>
             </div>
         </nav> 
