@@ -22,14 +22,14 @@ export default function Posts(props) {
                     <h1 className="text-white font-bold text-5xl mb-5">Posts</h1>
                     <ul className="flex flex-col gap-y-7 pb-10">
                         {posts.map((post, index) => (
-                            <Link href="" key={index}>
+                            <Link href={`/posts/${post.slug}`} key={index}>
                                 <li className="flex flex-col gap-y-1 p-3 rounded-xl border-2 border-gray-400 hover:bg-gray-800 ease-in-out transition duration-300">
                                     <div className="flex flex-row justify-between items-center">
                                         <h2 className="text-white text-xl font-semibold">{post.data.title}</h2>
                                         <div>
                                             {post.data.tags.map((tag, tagIndex) => (
                                                 <span key={tag} className="text-[#5e9bff]">
-                                                    <Link href="">{tag}</Link>
+                                                    <Link href={`/posts?tag=${tag}`}>{tag}</Link>
                                                     {tagIndex!=post.data.tags.length-1 && <span className="mx-1">•</span>}
                                                 </span>
                                             ))}
