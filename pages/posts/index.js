@@ -54,10 +54,10 @@ export default function Posts(props) {
 }
 
 export async function getStaticProps() {
-    const files = fs.readdirSync("../../posts", "utf-8");
+    const files = fs.readdirSync(`${process.cwd()}/posts`, "utf-8");
     const posts = files.map((post) => {
         const slug = post.replace(".md", "");
-        const fileContent = fs.readFileSync("../../posts/${post}", "utf-8");
+        const fileContent = fs.readFileSync(`${process.cwd()}/posts/${post}`, "utf-8");
         const parsedContent = matter(fileContent);
         const {data} = parsedContent;
         return {slug, data};
