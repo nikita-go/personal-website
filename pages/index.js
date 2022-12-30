@@ -13,8 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div class="flex flex-col h-screen">
-        <div className="h-[76px]"></div>
+      <div className="flex flex-col h-screen">
         <div className="flex justify-center items-center flex-auto">
           <div className="max-w-[80%] text-left">
             <h1 className="text-5xl text-[#ECDBBA] font-bold">Nikita Gorshkov</h1>

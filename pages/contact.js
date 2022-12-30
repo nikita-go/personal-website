@@ -14,7 +14,6 @@ export default function Projects() {
             </Head>
             <Header />
             <div className="flex flex-col h-screen">
-                <div className="h-[76px]"></div>
                 <div className="flex justify-center items-center flex-auto">
                     <Form />
                 </div>
