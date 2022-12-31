@@ -28,7 +28,7 @@ export default function Posts(props) {
                                         <h2 className="text-white text-xl font-semibold">{post.data.title}</h2>
                                         <div>
                                             {post.data.tags.map((tag, tagIndex) => (
-                                                <span key={tag} className="text-[#5e9bff]">
+                                                <span key={tag} className="text-[#5187df] hover:text-[#5d9bff] ease-in-out transition duration-300">
                                                     <Link href={`/posts?tag=${tag}`}>{tag}</Link>
                                                     {tagIndex!=post.data.tags.length-1 && <span className="mx-1">•</span>}
                                                 </span>

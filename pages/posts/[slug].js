@@ -34,7 +34,7 @@ export default function Post({ frontmatter, content }) {
                             </p>
                             <div>
                                 {frontmatter.tags.map((tag, tagIndex) => (
-                                    <span key={tag} className="text-[#5e9bff]">
+                                    <span key={tag} className="text-[#5187df] hover:text-[#5d9bff] ease-in-out transition duration-300">
                                         <Link href={`/posts?tag=${tag}`}>{tag}</Link>
                                         {tagIndex!=frontmatter.tags.length-1 && <span className="mx-1">•</span>}
                                     </span>
@@ -44,7 +44,7 @@ export default function Post({ frontmatter, content }) {
                         <Link href="/posts" className="text-lg text-gray-300 hover:text-gray-100 ease-in-out transition duration-300">&larr; Back to posts</Link>
                     </div>
                     <div className="py-6 border-t-2 border-white">
-                        <article className="prose prose-lg prose-invert"><ReactMarkdown
+                        <article className="prose prose-lg prose-invert prose-a:text-[#5187df]"><ReactMarkdown
                             remarkPlugins={[remarkMath]}>
                                 {content}
                             </ReactMarkdown>
