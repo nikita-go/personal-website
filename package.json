@@ -23,6 +23,7 @@
     "react-markdown": "^8.0.4",
     "react-simple-typewriter": "^5.0.1",
     "react-typewriter-effect": "^1.1.0",
+    "remark-math": "^5.1.1",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
