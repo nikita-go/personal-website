@@ -13,3 +13,5 @@ Despite being a newbie when it comes to web development (I only started back in 
 I'm thinking about adding a light/dark mode toggle button for this website since I know not everyone doesn't like dark themes. I'm also probably going to use this blog to post some math that I'll be doing for school. Something I'm thinking about is adding some of my solutions to CP contests that I take part in.
 
 And of course, I'll be adding more [projects](https://nikitago.xyz/projects) over time as I learn more about web devlopment.
+
+*Happy new year!*
