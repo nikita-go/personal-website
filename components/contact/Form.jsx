@@ -10,7 +10,7 @@ export const Form = () => {
                     <input name="email" type="email"  placeholder="Email" className="bg-zinc-900 rounded-md border-transparent focus:ring-0 focus:border-zinc-600" />
                     <textarea name="message" placeholder="Message (required)" className="bg-zinc-900 col-start-1 col-end-3 resize-none h-[30vh] rounded-md border-transparent focus:ring-0 focus:border-zinc-600" required />
                 </div>
-                <button type="submit" className="px-3 py-2 bg-zinc-900 hover:bg-zinc-800 rounded-lg">Submit</button>
+                <button type="submit" className="px-3 py-2 my-4 bg-zinc-900 hover:bg-zinc-800 rounded-lg">Submit</button>
             </form>
         </div>
     )
