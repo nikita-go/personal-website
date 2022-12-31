@@ -17,7 +17,7 @@ export default function Posts(props) {
             </Head>
             <main className="flex flex-col min-h-screen">
                 <Header />
-                <div className="flex flex-col w-[60%] mx-[20%] mt-12 grow">
+                <div className="flex flex-col w-[60%] mx-[20%] my-12 grow">
                     <h1 className="text-white font-bold text-5xl mb-5">Posts</h1>
                     <ul className="flex flex-col gap-y-7 pb-10">
                         {posts.map((post, index) => (

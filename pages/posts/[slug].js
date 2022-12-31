@@ -21,7 +21,7 @@ export default function Post({ frontmatter, content }) {
             </Head>
             <main className="flex flex-col min-h-screen">
                 <Header />
-                <div className="flex mx-[20%] flex-col mt-12 grow">
+                <div className="flex mx-[20%] flex-col my-12 grow">
                     <div className="flex flex-col gap-y-1 pb-6">
                         <h1 className="text-white text-5xl font-bold">{frontmatter.title}</h1>
                         <div className="flex flex-row justify-between text-xl">
