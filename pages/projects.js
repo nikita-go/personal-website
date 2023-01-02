@@ -2,8 +2,11 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "../components/global/Header";
 import { Footer } from "../components/global/Footer";
+import ProjectCard from "../components/projects/ProjectCard";
+import projectList from "../components/projects/projectList";
 
 export default function Projects() {
+    console.log(projectList);
     return(
         <>
             <Head>
@@ -13,8 +16,20 @@ export default function Projects() {
             </Head>
             <main className="flex flex-col min-h-screen">
                 <Header />
-                <div className="flex justify-center items-center flex-auto">
-                    <p className="text-white font-bold text-9xl">Coming soon!</p>
+                <div className="flex flex-col w-[60%] mx-[20%] my-12 grow">
+                    <h1 className="text-white font-bold text-5xl mb-5">Projects</h1>
+                    <div className="grid grid-cols-2">
+                        {projectList.map((project) => (
+                            <ProjectCard 
+                                name={project.name}
+                                link={project.link}
+                                github={project.github}
+                                startColor={project.startColor}
+                                endColor={project.endColor}
+                                description={project.description}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <Footer />
             </main>
