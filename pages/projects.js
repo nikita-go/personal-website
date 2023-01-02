@@ -6,7 +6,6 @@ import ProjectCard from "../components/projects/ProjectCard";
 import projectList from "../components/projects/projectList";
 
 export default function Projects() {
-    console.log(projectList);
     return(
         <>
             <Head>
@@ -18,9 +17,10 @@ export default function Projects() {
                 <Header />
                 <div className="flex flex-col w-[60%] mx-[20%] my-12 grow">
                     <h1 className="text-white font-bold text-5xl mb-5">Projects</h1>
-                    <div className="grid grid-cols-2">
-                        {projectList.map((project) => (
+                    <div className="grid grid-cols-2 gap-4">
+                        {projectList.map((project, key) => (
                             <ProjectCard 
+                                key={key}
                                 name={project.name}
                                 link={project.link}
                                 github={project.github}
