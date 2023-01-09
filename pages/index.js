@@ -31,9 +31,9 @@ export default function Home() {
             </span>
             <br />
             <div className="text-[#faf8f0] text-xl my-4">
-              <p>Hi! I'm currently a high school junior who enjoys web development and loves using technology to help others.</p>
+              <p>Hi! I'm currently a high school junior who enjoys web development and I do some competitive programming on the side.</p>
               <br />
-              <p>On the side I like to do competitive programming.</p>
+              <p> I'm currently a web developer for the <a href="https://joincpi.org/" className="font-semibold text-purple-600">Competitive Programming Initiative</a> and <a href="https://www.cerealcodes.org/" className="font-semibold"><span className="text-neutral-400">Cereal</span><span className="text-green-600">Codes</span></a>.</p>
               <br />
               <p>I'll be adding more to this website very soon since I currently have some free time.</p>
               <br />
