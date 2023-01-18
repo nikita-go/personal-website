@@ -19,7 +19,7 @@ export default function Posts(props) {
                 <Header />
                 <div className="flex flex-col w-[60%] mx-[20%] my-12 grow">
                     <h1 className="text-white font-bold text-5xl mb-5">Posts</h1>
-                    <ul className="flex flex-col gap-y-7 pb-10">
+                    <ul className="flex flex-col gap-y-6 pb-10">
                         {posts.map((post, index) => (
                             <Link href={`/posts/${post.slug}`} key={index}>
                                 <li className="flex flex-col gap-y-1 p-3 rounded-xl border-2 border-gray-400 hover:bg-gray-800 ease-in-out transition duration-300">
