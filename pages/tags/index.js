@@ -3,8 +3,24 @@ import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../../components/global/Header";
 import { Footer } from "../../components/global/Footer";
+import fs from "fs";
+import matter from "gray-matter";
 
-export default function Tags() {
+export default function Tags(props) {
+    const tags = props.tags;
+    let countedTags = {};
+    tags.forEach((tag) => {
+        if (tag in countedTags) {
+            countedTags[tag]++;
+        }
+        else {
+            countedTags[tag] = 1;
+        }
+    });
+    const sortedTags = Object.entries(countedTags)
+    .sort((a, b) => b[1] - a[1])
+    .map(([tag, count]) => ({ tag, count }));
+    console.log(sortedTags);
     return(
         <>
             <Head>
@@ -14,7 +30,20 @@ export default function Tags() {
             </Head>
             <main className="flex flex-col min-h-screen">
                 <Header />
-                
+                <div className="flex justify-center items-center grow">
+                    <div className="flex flex-row items-center justify-center max-w-[60%] space-x-6">
+                        <h1 className="text-5xl font-bold text-white">Tags</h1>
+                        <div className="border-l-2 pl-6 py-2">
+                            <div className="flex max-w-xl flex-wrap text-gray-400">
+                                {sortedTags.map(({ tag, count }) => (
+                                    <div key={tag} className="py-1 pr-4 text-base uppercase">
+                                        <Link href={`/tags/${tag}`}>{tag} <span className="font-semibold text-blue-500">{` (${count})`}</span></Link>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <Footer />
             </main>
         </>
@@ -24,34 +53,19 @@ export default function Tags() {
 export async function getStaticProps() {
     const files = fs.readdirSync(`${process.cwd()}/posts`, "utf-8");
     const posts = files.map((post) => {
-        const slug = post.replace(".md", "");
         const fileContent = fs.readFileSync(`${process.cwd()}/posts/${post}`, "utf-8");
         const parsedContent = matter(fileContent);
-        const {data} = parsedContent;
-        return {slug, data};
+        return parsedContent;
     });
-    posts.sort((a, b) => {
-        return new Date(b.data.date) - new Date(a.data.date);
-    });
-    return {
-        props:{
-            posts
-        }
-    }
-}
-
-export const getTags = () => {
-    const posts = getStaticProps();
     let tags = [];
     posts.forEach((post) => {
         if (post?.data?.tags) {
             tags = [...tags, ...post.data.tags];
         }
-    })
-    return tags;
+    });
+    return {
+        props: {
+            tags
+        }
+    }
 }
-
-export const getUniqueTags = () => {
-    const tags = getTags();
-    return Array.from(new Set(tags));
-  };
