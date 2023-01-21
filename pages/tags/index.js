@@ -34,10 +34,10 @@ export default function Tags(props) {
                     <div className="flex flex-row items-center justify-center max-w-[60%] space-x-6">
                         <h1 className="text-5xl font-bold text-white">Tags</h1>
                         <div className="border-l-2 pl-6 py-2">
-                            <div className="flex max-w-xl flex-wrap text-gray-400">
+                            <div className="flex max-w-xl flex-wrap text-blue-500 font-medium">
                                 {sortedTags.map(({ tag, count }) => (
                                     <div key={tag} className="py-1 pr-4 text-base uppercase">
-                                        <Link href={`/tags/${tag}`}>{tag} <span className="font-semibold text-blue-500">{` (${count})`}</span></Link>
+                                        <Link href={`/tags/${tag}`}>{tag} <span className="font-normal text-gray-400">{` (${count})`}</span></Link>
                                     </div>
                                 ))}
                             </div>
