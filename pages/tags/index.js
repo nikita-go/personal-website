@@ -20,7 +20,6 @@ export default function Tags(props) {
     const sortedTags = Object.entries(countedTags)
     .sort((a, b) => b[1] - a[1])
     .map(([tag, count]) => ({ tag, count }));
-    console.log(sortedTags);
     return(
         <>
             <Head>
