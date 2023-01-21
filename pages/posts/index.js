@@ -62,7 +62,7 @@ export async function getStaticProps() {
         return {slug, data};
     });
     posts.sort((a, b) => {
-        return new Date(b.date) - new Date(a.date);
+        return new Date(b.data.date) - new Date(a.data.date);
     });
     return {
         props:{
