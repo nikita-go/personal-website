@@ -10,8 +10,6 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 export default function Post({ frontmatter, content }) {
-    console.log(frontmatter);
-    console.log(content);
     return (
         <>
             <Head>
