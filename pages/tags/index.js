@@ -31,7 +31,7 @@ export default function Tags(props) {
             <main className="flex flex-col min-h-screen">
                 <Header />
                 <div className="flex justify-center items-center grow">
-                    <div className="flex flex-row items-center justify-center max-w-[60%] space-x-6">
+                    <div className="flex flex-row items-center justify-center w-[60%] space-x-6">
                         <h1 className="text-5xl font-bold text-white">Tags</h1>
                         <div className="border-l-2 pl-6 py-2">
                             <div className="flex max-w-xl flex-wrap text-blue-500 font-medium">
