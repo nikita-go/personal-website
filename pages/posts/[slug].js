@@ -33,10 +33,12 @@ export default function Post({ frontmatter, content }) {
                             </p>
                             <div>
                                 {frontmatter.tags.map((tag, tagIndex) => (
+                                    <>
                                     <span key={tag} className="text-[#5187df] hover:text-[#5d9bff] ease-in-out transition duration-300">
                                         <Link href={`/tags/${tag}`}>{tag}</Link>
-                                        {tagIndex!=frontmatter.tags.length-1 && <span className="mx-1">•</span>}
                                     </span>
+                                    {tagIndex!=frontmatter.tags.length-1 && <span className="mx-1 text-[#5187df]">•</span>}
+                                    </>
                                 ))}
                             </div>
                         </div>
